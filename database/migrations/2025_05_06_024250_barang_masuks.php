@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('barang_id');
             $table->integer("jumlah");
-            $table->string("penerima");
+            $table->string("pengirim");
             $table->date("tanggal_masuk");
             $table->timestamps();
         });
