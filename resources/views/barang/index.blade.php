@@ -10,7 +10,7 @@
 
 <body>
 
-    <h1>Data Barang Masuk</h1>
+    <h1>Data Barang</h1>
     <a href="{{ route('tambah-barang') }}">Tambah</a> |
     <a href="{{ route('barang-masuk') }}">Barang Masuk</a>
 
@@ -18,6 +18,10 @@
         <tr>
             <th>Nama</th>
             <th>Jumlah</th>
+            <th>Keterangan</th>
+            <th>Jumlah Baik</th>
+            <th>Jumlah Kurang Baik</th>
+            <th>Kategori</th>
             <th>Tanggal</th>
             <th>Aksi</th>
         </tr>
