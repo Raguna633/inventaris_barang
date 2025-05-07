@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\InputController;
 use App\Http\Controllers\BarangController;
-
+use App\Http\Controllers\KategoriController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -21,3 +21,6 @@ Route::post('/barang-masuk/kirim', [InputController::class, 'kirim']);
 
 //BUAT INPUT BARANG BARU
 Route::get('/barang', [BarangController::class, 'index'])->name('barang');
+
+Route::get('/kategori/data', [KategoriController::class, 'data'])->name('kategori.data');
+        Route::resource('/kategori', KategoriController::class);
